@@ -1,0 +1,40 @@
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 720px;
+    background: black;
+	//background-image: url("https://pbs.twimg.com/profile_images/2431114982/image.jpg");
+    color: white;
+}
+
+header {
+    text-align: center;
+}
+
+.sTitre {
+    font-size: 32pt;
+}
+
+#gameArea {
+    position: relative;
+    width: 720px;
+    height: 864px;
+}
+
+canvas {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#mapCanvas {
+    z-index: 1;
+}
+
+#foodCanvas {
+    z-index: 2;
+}
+
+#entityCanvas {
+    z-index: 3;
+}

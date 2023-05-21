@@ -1,0 +1,11 @@
+# Class javascript
+http://www.phpied.com/3-ways-to-define-a-javascript-class/
+
+# Pacman Logic
+http://gameinternals.com/post/2072558330/understanding-pac-man-ghost-behavior
+
+# Pacman documentation and multimedia
+http://www.classicgaming.cc/classics/pacman/index.php
+
+# Best Shit
+http://home.comcast.net/~jpittman2/pacman/pacmandossier.html

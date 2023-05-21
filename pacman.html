@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta http-equiv="Content-Type" charset="utf-8" />
+        <title>Pacman par Simon Chevrier et Yannick Beauchamp-Hurtubise</title>
+        
+        <!-- imports -->
+        <link rel="stylesheet" type="text/css" href="style.css" />
+		<script type="application/javascript" src="javascript/SoundManager.js"></script>
+		<script type="application/javascript" src="javascript/GameModes.js"></script>
+        <script type="application/javascript" src="javascript/Utils/BU.js"></script>
+        <script type="application/javascript" src="javascript/Utils/CanvasUtil.js"></script>
+        <script type="application/javascript" src="javascript/Utils/Direction.js"></script>
+        <script type="application/javascript" src="javascript/Utils/Point.js"></script>
+        <script type="application/javascript" src="javascript/Map/TileType.js"></script>
+        <script type="application/javascript" src="javascript/Map/FoodType.js"></script>
+        <script type="application/javascript" src="javascript/Map/DefaultMapData.js"></script>
+        <script type="application/javascript" src="javascript/Map/Tile.js"></script>
+        <script type="application/javascript" src="javascript/Map/Map.js"></script>
+        <script type="application/javascript" src="javascript/Entity/Pacman.js"></script>
+        <script type="application/javascript" src="javascript/Entity/Ghost/GhostMode.js"></script>
+        <script type="application/javascript" src="javascript/Entity/Ghost/GhostTiming.js"></script>
+		<script type="application/javascript" src="javascript/Entity/Ghost/Pinky.js"></script>
+		<script type="application/javascript" src="javascript/Entity/Ghost/Inky.js"></script>
+		<script type="application/javascript" src="javascript/Entity/Ghost/Blinky.js"></script>
+		<script type="application/javascript" src="javascript/Entity/Ghost/Clyde.js"></script>
+		<script type="application/javascript" src="javascript/Entity/Ghost/Ghost.js"></script>
+        <script type="application/javascript" src="javascript/Main.js"></script>
+        <script type="application/javascript" src="javascript/EventHandler.js"></script>
+        
+        <!-- local -->
+        <script type="text/javascript">
+            setTimeout(function() {
+                document.getElementById('entityCanvas').focus();
+            }, 1);
+        </script>
+    </head>
+
+    <body onload="initGame()">
+        <header>
+            <div class="sTitre">Pacman</div>
+            <div>par Simon Chevrier et Yannick Beauchamp-Hurtubise</div>
+        </header>
+
+        <section id="gameArea">
+            <canvas id="mapCanvas" width="720" height="864" tabindex="0" oncontextmenu="return false">
+                Votre navigateur ne supporte pas la balise canvas
+            </canvas>
+            <canvas id="foodCanvas" width="720" height="864" tabindex="0" oncontextmenu="return false">
+                Votre navigateur ne supporte pas la balise canvas
+            </canvas>
+            <canvas id="entityCanvas" width="720" height="864" tabindex="0" oncontextmenu="return false" onkeydown="keyDownEvent(event)" onmousemove="mouseMoveEvent(event)" onmousedown="mouseDownEvent(event)" onmouseup="mouseUpEvent(event)" onfocus="pause(false)" onblur="pause(true)">
+                Votre navigateur ne supporte pas la balise canvas
+            </canvas>
+        </section>
+
+        <footer>
+			
+        </footer>
+    </body>
+</html>
